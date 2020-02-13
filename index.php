@@ -31,7 +31,7 @@
 			</div>
 			<div class="col-md-3 text-center">
 				<em> Note : Generating winners has 2 sec interval.</em><br/>
-				<button class="btn btn-primary btn-lg mt-3" type="button" id="generate" disabled>GENERATE</button>
+				<button class="btn btn-primary btn-lg mt-3" type="button" id="generate" disabled>Generate</button>
 			</div>
 			<div class="col-md-2">
 				<label>Winners :</label>
@@ -93,6 +93,7 @@
 					name = stacks[random];
 					addToWinners(name);
 				}else{
+				    $('#generate').text('Generate');
 					clearInterval(inter);
 					alert('Winners has been generated');
 				}
